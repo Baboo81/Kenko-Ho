@@ -1,0 +1,158 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+/* General styles */
+
+body
+{
+    font-family: "Bodoni Moda", serif;
+}
+
+.sections
+{
+    padding: 20px 0;
+}
+
+.overlay
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+
+header
+{
+    height: 85px;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+header i.icon
+{
+    position: absolute;
+    right: 0px;
+    top: 32px;
+    z-index: 10;
+    display: none;
+}
+
+header .logo
+{
+    height: 100px;
+    width: 100px;
+}
+
+header nav .nav-list
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+header nav .nav-list .list 
+{
+    display: block;
+    padding: 15px 0;
+    margin: 9px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+}
+
+header nav .nav-list .list:hover
+{
+    color: #7cb62f;
+}
+
+.sticky
+{
+    background: #000;
+    opacity: 50%;
+    color: #fff;
+}
+
+/*Home section*/
+.home
+{
+    height: 1200px;
+    background-image: url(../img/other/Home.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home .homeContent
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+}
+
+.home .homeTitle
+{
+    color: #fff;
+    font-size: 6em;
+}
+
+.home .homeDesc
+{
+    color: #fff;
+    font-size: 2em;
+}
+/*Home section END*/
+
+/*Main Section*/
+.mainSection
+{
+    height: 1200px;
+}
+
+.mainSection-title
+{
+    font-size: 2.5em;
+}
+
+@media (max-width: 575px)
+{
+    header nav .nav-list
+    {
+        display: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    header nav .nav-list
+    {
+        background: #000;
+    }
+    
+    header .logo
+    {
+        text-align: center;
+    }
+
+    header i.icon 
+    {
+        display: block;
+    }
+
+   .home .homeTitle
+    {
+        font-size: 2em;
+    }
+
+    .home .homeDesc
+    {
+        font-size: 1em;
+        line-height: 2em;
+    }
+}
