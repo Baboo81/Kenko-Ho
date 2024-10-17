@@ -1,6 +1,15 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
+:root
+{
+    --darkBlue : #06668c;
+    --blue : #06668C;
+    --white : #EBF2FA;
+    --greenDark : #679436;
+    --green : #A4BD01;
+}
+
 /* General styles */
 
 body
