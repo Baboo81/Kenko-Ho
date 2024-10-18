@@ -150,6 +150,20 @@ header nav .nav-list .list:hover
     bottom: 0.5px;
 }
 
+section .box1
+{
+    height: 500px;
+    width: 550px;
+    background-image: url(../img/other/Aroma.jpg);
+}
+
+section .box2
+{
+    height: 500px;
+    width: 550px;
+    background-image: url(../img/other/Reiki.jpg);
+}
+
 @media (max-width: 575px)
 {
     header nav .nav-list
