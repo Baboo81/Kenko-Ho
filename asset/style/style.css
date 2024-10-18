@@ -126,6 +126,11 @@ header nav .nav-list .list:hover
     height: 1200px;
 }
 
+.mainTitleContent
+{
+    padding: 100px;
+}
+
 .mainSection-title
 {
     font-size: 2.5em;
@@ -134,9 +139,10 @@ header nav .nav-list .list:hover
 .line
 {
     width: 200px;
-    background: #ddd;
+    background: var(--blue);
     height: 3px;
     margin: auto;
+    margin-top: -1%;
 }
 
 .line span
@@ -144,24 +150,44 @@ header nav .nav-list .list:hover
     display: block;
     width: 100px;
     height: 4px;
-    background: #000;
+    background: var(--green);
     margin: auto;
     position: relative;
     bottom: 0.5px;
 }
 
+.mainBox
+{
+    height: 1200px;
+    width: 1500px;
+    background-color: var(--green);
+}
+
+.subBox
+{
+    display: block;
+    margin-left: 7%;
+    position: relative;
+}
+
 section .box1
 {
     height: 500px;
-    width: 550px;
+    width: 600px;
     background-image: url(../img/other/Aroma.jpg);
 }
 
 section .box2
 {
     height: 500px;
-    width: 550px;
+    width: 600px;
     background-image: url(../img/other/Reiki.jpg);
+}
+
+.textBox
+{
+    font-size: 1.5em;
+    
 }
 
 @media (max-width: 575px)
