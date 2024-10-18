@@ -58,7 +58,7 @@ header .logo
     width: 100px;
 }
 
-header nav .nav-list
+header nav .nav-list 
 {
     list-style: none;
     display: flex;
@@ -66,7 +66,14 @@ header nav .nav-list
     margin-bottom: 0;
 }
 
-header nav .nav-list .list 
+header nav .nav-list a
+{
+    text-decoration: none;
+    font-size: 2em;
+    color: var(--white);
+}
+
+header nav .nav-list a 
 {
     display: block;
     padding: 15px 0;
@@ -76,9 +83,9 @@ header nav .nav-list .list
     color: #fff;
 }
 
-header nav .nav-list .list:hover
+header nav .nav-list a:hover
 {
-    color: #7cb62f;
+    color: var(--green);
 }
 
 .sticky
@@ -154,20 +161,6 @@ header nav .nav-list .list:hover
     margin: auto;
     position: relative;
     bottom: 0.5px;
-}
-
-.mainBox
-{
-    height: 1200px;
-    width: 1500px;
-    background-color: var(--green);
-}
-
-.subBox
-{
-    display: block;
-    margin-left: 7%;
-    position: relative;
 }
 
 section .box1
