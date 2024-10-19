@@ -128,7 +128,25 @@ header nav .nav-list a:hover
 /*Home section END*/
 
 /* Slider */
+.item
+{
+    background-image: url(../img/slider/Slider1.jpg);
+}
 
+.item2
+{
+    background-image: url(../img/slider/Slider2.jpg);
+}
+
+.item3
+{
+    background-image: url(../img/slider/Slider3.jpg);
+}
+
+.item4
+{
+    background-image: url(../img/slider/Slider4.jpg);
+}
 /* Slider END */
 
 /*Main Section*/
