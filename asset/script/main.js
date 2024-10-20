@@ -20,3 +20,17 @@ $(window).scroll(function(){
     }
 });
 
+//Slider:
+let next = document.querySelector('.carousel-control-next');
+let prev = document.querySelector('.carousel-control-prev');
+
+next.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').appendChild(items[0])
+});
+
+prev.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').prepend(items[items.length - 1])
+})
+
