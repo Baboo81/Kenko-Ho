@@ -128,22 +128,22 @@ header nav .nav-list a:hover
 /*Home section END*/
 
 /* Slider */
-.item
+.box1
 {
     background-image: url(../img/slider/Slider1.jpg);
 }
 
-.item2
+.box2
 {
-    background-image: url(../img/slider/Slider2.jpg);
+    background-image: url();
 }
 
-.item3
+.box3
 {
     background-image: url(../img/slider/Slider3.jpg);
 }
 
-.item4
+.box4
 {
     background-image: url(../img/slider/Slider4.jpg);
 }
@@ -184,6 +184,86 @@ header nav .nav-list a:hover
     border-radius: 0;
     width: 100%;
     height: 100%;
+}
+
+.slide .item:nth-child(3)
+{
+    left: 50%;
+}
+
+.slide .item:nth-child(4)
+{
+    left: calc(50% + 220px);
+}
+
+.slide .item:nth-child(5)
+{
+    left: calc(50% + 440px);
+}
+
+.slide .item:nth-child(n + 6)
+{
+    left: calc(50% + 660px);
+    opacity: 0;
+}
+
+.item .content
+{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    color: var(--white);
+    transform: translate(0, -50%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+}
+
+.slide .item:nth-child(2) .content
+{
+    display: block;
+}
+
+.content .name
+{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+.content .description
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+@keyframes animate 
+{
+    from
+    {
+        opacity: 0;
+        transform:  translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to 
+    {
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+.button
+{
+    width: 100%;
+    text-align: center;
+    position: absolute;
 }
 /* Slider END */
 
@@ -228,14 +308,14 @@ h3
     font-size: 2.5em;
 }
 
-.box1
+.servicesBox1
 {
     height: 500px;
     width: 600px;
     background-image: url(../img/other/Aroma.jpg);
 }
 
-.box2
+.servicesBox2
 {
     height: 500px;
     width: 600px;
