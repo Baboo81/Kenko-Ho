@@ -135,7 +135,7 @@ header nav .nav-list a:hover
 
 .box2
 {
-    background-image: url();
+    background-image: url(../img/slider/Slider2.jpg);
 }
 
 .box3
@@ -148,6 +148,16 @@ header nav .nav-list a:hover
     background-image: url(../img/slider/Slider4.jpg);
 }
 
+.box5
+{
+    background-image: url(../img/slider/Slider5.jpg);
+}
+
+.box6
+{
+    background-image: url(../img/slider/Slider6.jpg);
+}
+
 .sliderContent
 {
     position: absolute;
@@ -156,7 +166,7 @@ header nav .nav-list a:hover
     transform: translate(-50%, -50%);
     width: 1000px;
     height: 600px;
-    background: pink;
+    background-image: url(../img/slider/Slider8.jpg);
     box-shadow: 0 30px 50px var(--blue);
 }
 
