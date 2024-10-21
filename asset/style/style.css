@@ -161,7 +161,7 @@ header nav .nav-list a:hover
 .sliderContent
 {
     position: absolute;
-    top: 50%;
+    top: 220%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1000px;
