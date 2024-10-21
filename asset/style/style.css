@@ -80,7 +80,7 @@ header nav .nav-list a
     margin: 9px 0;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    color: #fff;
+    color: var(--white);
 }
 
 header nav .nav-list a:hover
